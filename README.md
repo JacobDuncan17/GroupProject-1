@@ -13,6 +13,7 @@ This interactive front-end application generates a randomized activity that corr
 
 
 ## User Story
+```
 GIVEN I am bored and have some extra time on my hands
 WHEN I load the application
 THEN I am presented with the current day
@@ -26,5 +27,6 @@ WHEN I don't like the activity presented to me for that day
 THEN I can choose to be assigned a new random activity for that day and my overall score decreases by 1 point
 WHEN I click the logged activities button
 THEN I am presented with a list of completed activities and dates of completion
+```
 
 ## TO DO: Insert images of application here
