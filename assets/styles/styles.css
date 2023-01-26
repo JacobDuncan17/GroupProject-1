@@ -92,6 +92,7 @@ footer {
     margin: 8px 20px;
 }
 
+<<<<<<< HEAD
 
 #generateActivityBtn {
     background-color: var(--fire-opal);
@@ -106,3 +107,37 @@ footer {
 }
 
 
+=======
+/* Help Modal */
+
+.help-icon {
+    background-color: var(--black-coffee);
+    color: var(--papaya-whip);
+}
+
+.help-modal-bg {
+    background-color: var(--papaya-whip);
+}
+
+.help-modal-bg-dark {
+    background-color: var(--black-coffee);
+}
+
+.modal-text {
+    color: var(--black-coffee);
+}
+
+.modal-text-light {
+    color: #3a3335c7;
+}
+
+#close-modal {
+    background-color: var(--papaya-whip);
+    color: var(--black-coffee);
+}
+
+#close-modal:hover {
+    padding: 15px;
+    transition: 200ms;
+}
+>>>>>>> f2425e2cd0115c70e18f299403c94340719877f6
