@@ -10,7 +10,7 @@ font-style: normal; */
     --fire-opal: #eb5e55;
     --ruby: #d81e5b;
     --papaya-whip: #fdf0d5;
-    --opal: #c6d8d3;
+    --opal: #C6D8D3;
 }
 
 * {
@@ -27,6 +27,7 @@ body {
     color: #fdf0d5;
     width: 250px;
     height: 300px;
+    align-items: center;
 }
 
 #date1 {
@@ -91,6 +92,22 @@ footer {
     margin: 8px 20px;
 }
 
+<<<<<<< HEAD
+
+#generateActivityBtn {
+    background-color: var(--fire-opal);
+    margin: 30px;
+}
+
+#activityText1 {
+    background-color: #EB5E55;
+    color: #fdf0d5;
+    display: none;
+    margin-top: 50px;
+}
+
+
+=======
 /* Help Modal */
 
 .help-icon {
@@ -123,3 +140,4 @@ footer {
     padding: 15px;
     transition: 200ms;
 }
+>>>>>>> f2425e2cd0115c70e18f299403c94340719877f6
