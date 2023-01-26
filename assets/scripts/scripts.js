@@ -11,3 +11,27 @@ $(function () {
     $("#dayAfterTomorrowDay").text(dayAfterTomorrow.format("dddd")) 
  });
  
+const generateActivity = document.querySelector("#generateActivityBtn");
+generateActivity.onclick = ()=>{
+    activity.style.display = "flex";
+    generateActivity.style.display = "none"
+    bored();
+}
+const boredApi = 'http://www.boredapi.com/api/activity/'
+const activity = document.querySelector("#activityText1");
+function bored() {
+    fetch(boredApi)
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                let boredApiData = data;
+                const dataString = JSON.stringify(boredApiData.activity);
+                activity.textContent = boredApiData.activity;
+            })
+}
+
+
+
+
+    
