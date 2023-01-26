@@ -1,0 +1,70 @@
+:root {
+    --black-coffee: #3a3335;
+    --fire-opal: #eb5e55;
+    --ruby: #d81e5b;
+    --papaya-whip: #fdf0d5;
+    --opal: #c6d8d3;
+}
+
+* {
+    font-family: "myriad-pro", sans-serif;
+    font-style: normal;
+}
+
+nav {
+    font-family: "myriad-pro", sans-serif;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 4rem;
+    padding: 2rem;
+    color: var(--papaya-whip);
+    background-color: var(--black-coffee);
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: var(--papaya-whip);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+}
+
+
+#card {
+    background-color: var(--black-coffee);
+    color: var(--papaya-whip);
+    box-shadow: 0 0 30px var(--opal);
+    transition: all .2s ease-in-out;
+}
+
+#card:hover {
+    transform: scale(1.6);
+    box-shadow: 0 0 30px var(--fire-opal);
+}
+
+#activityText {
+    background-color: #EB5E55;
+    color: #fdf0d5;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 150px;
+}
+
+#date1 {
+    background-color: var(--opal);
+    color: var(--black-coffee)
+}
