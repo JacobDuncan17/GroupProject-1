@@ -90,3 +90,36 @@ footer {
     font-weight: bold;
     margin: 8px 20px;
 }
+
+/* Help Modal */
+
+.help-icon {
+    background-color: var(--black-coffee);
+    color: var(--papaya-whip);
+}
+
+.help-modal-bg {
+    background-color: var(--papaya-whip);
+}
+
+.help-modal-bg-dark {
+    background-color: var(--black-coffee);
+}
+
+.modal-text {
+    color: var(--black-coffee);
+}
+
+.modal-text-light {
+    color: #3a3335c7;
+}
+
+#close-modal {
+    background-color: var(--papaya-whip);
+    color: var(--black-coffee);
+}
+
+#close-modal:hover {
+    padding: 15px;
+    transition: 200ms;
+}
