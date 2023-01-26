@@ -31,22 +31,22 @@
     <main>
 
         <div class="p-6 bg-white border rounded-lg shadow " id="todayCard">
-            <h2 class="mb-2 text-3xl font-bold tracking-tight text-center">TODAY</h2>
-            <h3 class="mb-2 text-2xl font-bold tracking-tight text-center rounded-lg" id="date1">31st</h3>
+            <h2 class="mb-2 text-3xl font-bold tracking-tight text-center" id="todayDay"></h2>
+            <h3 class="mb-2 text-2xl font-bold tracking-tight text-center rounded-lg" id="today"></h3>
             <h4 class="mb-2 text-2xl tracking-tight text-center">Activity</h4>
             <p class="p-1 rounded-lg" id="activityText">Placeholder</p>
         </div>
 
         <div class="p-6 bg-white border rounded-lg shadow " id="todayCard">
-            <h2 class="mb-2 text-3xl font-bold tracking-tight text-center">TODAY</h2>
-            <h3 class="mb-2 text-2xl font-bold tracking-tight text-center rounded-lg" id="date1">31st</h3>
+            <h2 class="mb-2 text-3xl font-bold tracking-tight text-center" id="tomorrowDay"></h2>
+            <h3 class="mb-2 text-2xl font-bold tracking-tight text-center rounded-lg" id="tomorrow"></h3>
             <h4 class="mb-2 text-2xl tracking-tight text-center">Activity</h4>
             <p class="p-1 rounded-lg" id="activityText">Placeholder</p>
         </div>
 
         <div class="p-6 bg-white border rounded-lg shadow " id="todayCard">
-            <h2 class="mb-2 text-3xl font-bold tracking-tight text-center">TODAY</h2>
-            <h3 class="mb-2 text-2xl font-bold tracking-tight text-center rounded-lg" id="date1">31st</h3>
+            <h2 class="mb-2 text-3xl font-bold tracking-tight text-center" id="dayAfterTomorrowDay"></h2>
+            <h3 class="mb-2 text-2xl font-bold tracking-tight text-center rounded-lg" id="dayAfterTomorrow"></h3>
             <h4 class="mb-2 text-2xl tracking-tight text-center">Activity</h4>
             <p class="p-1 rounded-lg" id="activityText">Placeholder</p>
         </div>
@@ -60,8 +60,17 @@
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- DayJS -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/utc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/advancedFormat.js"></script>
+    <script>dayjs.extend(window.dayjs_plugin_utc)</script>
+    <script>dayjs.extend(window.dayjs_plugin_advancedFormat)</script>
+
     <!-- Javascript -->
     <script src="./assets/scripts/scripts.js"></script>
+    <!-- TODO make weather script -->
+    <!-- <script src="./assets/scripts/weather.js"></script> -->
 
 </body>
 
