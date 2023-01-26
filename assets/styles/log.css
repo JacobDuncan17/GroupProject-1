@@ -15,7 +15,6 @@ nav {
     font-family: "myriad-pro", sans-serif;
     font-style: normal;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-size: 4rem;
     padding: 2rem;
@@ -23,10 +22,10 @@ nav {
     background-color: var(--black-coffee);
 }
 
+
+
 h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 480px;
 }
 
 body {
