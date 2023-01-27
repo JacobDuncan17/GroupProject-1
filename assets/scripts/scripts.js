@@ -61,3 +61,49 @@ $("#tomorrow").text(tomorrow.format("MMM Do, YYYY"))
 $("#tomorrowDay").text(tomorrow.format("dddd"))
 $("#dayAfterTomorrow").text(dayAfterTomorrow.format("MMM Do, YYYY"))
 $("#dayAfterTomorrowDay").text(dayAfterTomorrow.format("dddd"))
+
+//Score modal
+const scoreModalbtn = document.querySelector("#activityText1")
+const scoreModal = document.querySelector("#small-modal")
+const scoreModalscoreBtn = document.querySelector("#score1")
+const scoreModalgiveUp = document.querySelector("#giveUp");
+const scoreModalclose = document.querySelector("#scoreModalClose");
+const score = document.querySelector("#scorePoints");
+let count = 0;
+scoreModalbtn.onclick = ()=>{
+    scoreModal.style.display = "flex";
+}
+scoreModalscoreBtn.onclick = ()=>{
+    count ++;
+    scorePoints.innerHTML = count;
+    scoreModal.style.display = "none"
+}
+scoreModalgiveUp.onclick = ()=>{
+    scoreModal.style.display = "none"
+}
+scoreModalclose.onclick = ()=>{
+    scoreModal.style.display = "none"
+}
+
+// completeButton.click(function () {
+//     activity.style.backgroundColor = "aquamarine";
+//     activity.style.color = "#3a3335";
+//     completeButton.hide();
+// });
+// completeButton = $("#complete-activity");
+// completeButton.hide();
+
+// Complete Activity
+completeButton.click(function () {
+    activity.style.backgroundColor = "aquamarine";
+    activity.style.color = "#3a3335";
+    completeButton.hide();
+});
+
+$("#today").text(today.format("MMM Do, YYYY"))
+$("#todayDay").text(today.format("dddd"))
+$("#tomorrow").text(tomorrow.format("MMM Do, YYYY"))
+$("#tomorrowDay").text(tomorrow.format("dddd"))
+$("#dayAfterTomorrow").text(dayAfterTomorrow.format("MMM Do, YYYY"))
+$("#dayAfterTomorrowDay").text(dayAfterTomorrow.format("dddd"))
+

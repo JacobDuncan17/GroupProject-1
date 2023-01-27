@@ -101,8 +101,12 @@ footer {
 }
 
 
+
 #generateActivityBtn {
     background-color: var(--fire-opal);
+
+    margin: 35px;
+
     margin-top: 20px;
     margin: 10px 30px;
     margin-bottom: 10px;
@@ -113,19 +117,22 @@ footer {
     color: var(--black-coffee);
     margin: 0px 50px;
     font-size: 15px;
+
 }
 
 #activityText1 {
     background-color: #EB5E55;
     color: #fdf0d5;
     display: none;
-    feature/styling-fixes
+
+    margin: 50px 10px 0px 10px;
+
+    
     margin-top: 20px;
     padding: 10px;
+
 }
 
-    margin: 10px 30px;
-}
 
 /* Help Modal */
 
@@ -158,4 +165,34 @@ footer {
 #close-modal:hover {
     padding: 15px;
     transition: 200ms;
+
 }
+
+#modalStyle {
+    background-color: var(--papaya-whip)
+}
+
+#scoreModalHeader{
+    color: var(--black-coffee);
+}
+#score1 {
+    background-color: var(--fire-opal);
+    color: var(--papaya-whip);
+}
+
+#giveUp {
+    background-color: var(--opal);
+    color: var(--papaya-whip);
+}
+.modal-text-light {
+    color: #3a3335c7;
+}
+
+#close-modal:hover {
+    padding: 15px;
+    transition: 200ms;
+}
+
+
+
+
