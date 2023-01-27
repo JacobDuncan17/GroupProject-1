@@ -92,22 +92,27 @@ footer {
     margin: 8px 20px;
 }
 
-<<<<<<< HEAD
 
 #generateActivityBtn {
     background-color: var(--fire-opal);
-    margin: 30px;
+    margin: 10px 30px;
+    margin-bottom: 10px;
+}
+
+#complete-activity {
+    background-color: var(--opal);
+    color: var(--black-coffee);
+    margin: 0px 50px;
+    font-size: 15px;
 }
 
 #activityText1 {
     background-color: #EB5E55;
     color: #fdf0d5;
     display: none;
-    margin-top: 50px;
+    margin: 10px 30px;
 }
 
-
-=======
 /* Help Modal */
 
 .help-icon {
@@ -140,4 +145,3 @@ footer {
     padding: 15px;
     transition: 200ms;
 }
->>>>>>> f2425e2cd0115c70e18f299403c94340719877f6
