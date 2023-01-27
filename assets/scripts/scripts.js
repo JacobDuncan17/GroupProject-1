@@ -17,17 +17,6 @@ const tomorrow = today.add(1, "day")
 const dayAfterTomorrow = today.add(2, "day")
 
 $(function () {
-<<<<<<< HEAD
-    $("#today").text(today.format("MMM Do, YYYY")) 
-    $("#todayDay").text(today.format("dddd")) 
-    $("#tomorrow").text(tomorrow.format("MMM Do, YYYY")) 
-    $("#tomorrowDay").text(tomorrow.format("dddd")) 
-    $("#dayAfterTomorrow").text(dayAfterTomorrow.format("MMM Do, YYYY")) 
-    $("#dayAfterTomorrowDay").text(dayAfterTomorrow.format("dddd")) 
- });
- 
- //Boredapi integration
-=======
     $("#today").text(today.format("MMM Do, YYYY"))
     $("#todayDay").text(today.format("dddd"))
     $("#tomorrow").text(tomorrow.format("MMM Do, YYYY"))
@@ -38,7 +27,6 @@ $(function () {
 
 completeButton = $("#complete-activity");
 completeButton.hide();
->>>>>>> e3c54f8037c552c8299d1814e1d66a757b4cd7f8
 const generateActivity = document.querySelector("#generateActivityBtn");
 generateActivity.onclick = () => {
     activity.style.display = "flex";
@@ -60,14 +48,19 @@ function bored() {
         })
 }
 
-<<<<<<< HEAD
-//Day.js 
-    $("#today").text(today.format("MMM Do, YYYY"))
-    $("#todayDay").text(today.format("dddd"))
-    $("#tomorrow").text(tomorrow.format("MMM Do, YYYY"))
-    $("#tomorrowDay").text(tomorrow.format("dddd"))
-    $("#dayAfterTomorrow").text(dayAfterTomorrow.format("MMM Do, YYYY"))
-    $("#dayAfterTomorrowDay").text(dayAfterTomorrow.format("dddd"))
+// Complete Activity
+completeButton.click(function () {
+    activity.style.backgroundColor = "aquamarine";
+    activity.style.color = "#3a3335";
+    completeButton.hide();
+});
+
+$("#today").text(today.format("MMM Do, YYYY"))
+$("#todayDay").text(today.format("dddd"))
+$("#tomorrow").text(tomorrow.format("MMM Do, YYYY"))
+$("#tomorrowDay").text(tomorrow.format("dddd"))
+$("#dayAfterTomorrow").text(dayAfterTomorrow.format("MMM Do, YYYY"))
+$("#dayAfterTomorrowDay").text(dayAfterTomorrow.format("dddd"))
 
 //Score modal
 const scoreModalbtn = document.querySelector("#activityText1")
@@ -99,7 +92,7 @@ scoreModalclose.onclick = ()=>{
 // });
 // completeButton = $("#complete-activity");
 // completeButton.hide();
-=======
+
 // Complete Activity
 completeButton.click(function () {
     activity.style.backgroundColor = "aquamarine";
@@ -113,4 +106,4 @@ $("#tomorrow").text(tomorrow.format("MMM Do, YYYY"))
 $("#tomorrowDay").text(tomorrow.format("dddd"))
 $("#dayAfterTomorrow").text(dayAfterTomorrow.format("MMM Do, YYYY"))
 $("#dayAfterTomorrowDay").text(dayAfterTomorrow.format("dddd"))
->>>>>>> e3c54f8037c552c8299d1814e1d66a757b4cd7f8
+

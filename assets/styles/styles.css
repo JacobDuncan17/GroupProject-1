@@ -101,11 +101,12 @@ footer {
 }
 
 
+
 #generateActivityBtn {
     background-color: var(--fire-opal);
-<<<<<<< HEAD
+
     margin: 35px;
-=======
+
     margin-top: 20px;
     margin: 10px 30px;
     margin-bottom: 10px;
@@ -116,24 +117,22 @@ footer {
     color: var(--black-coffee);
     margin: 0px 50px;
     font-size: 15px;
->>>>>>> e3c54f8037c552c8299d1814e1d66a757b4cd7f8
+
 }
 
 #activityText1 {
     background-color: #EB5E55;
     color: #fdf0d5;
     display: none;
-<<<<<<< HEAD
+
     margin: 50px 10px 0px 10px;
-=======
-    feature/styling-fixes
+
+    
     margin-top: 20px;
     padding: 10px;
->>>>>>> e3c54f8037c552c8299d1814e1d66a757b4cd7f8
+
 }
 
-    margin: 10px 30px;
-}
 
 /* Help Modal */
 
@@ -166,7 +165,7 @@ footer {
 #close-modal:hover {
     padding: 15px;
     transition: 200ms;
-<<<<<<< HEAD
+
 }
 
 #modalStyle {
@@ -194,6 +193,6 @@ footer {
     transition: 200ms;
 }
 
-=======
-}
->>>>>>> e3c54f8037c552c8299d1814e1d66a757b4cd7f8
+
+
+
