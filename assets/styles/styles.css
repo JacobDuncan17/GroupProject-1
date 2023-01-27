@@ -25,8 +25,14 @@ body {
 #todayCard {
     background-color: #3a3335;
     color: #fdf0d5;
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    min-height: fit-content;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
 }
 
@@ -39,13 +45,15 @@ body {
 #activityText {
     background-color: #EB5E55;
     color: #fdf0d5;
+    margin-top: 20px;
+    padding: 10px;
 }
 
 main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 nav {
@@ -95,16 +103,37 @@ footer {
 
 #generateActivityBtn {
     background-color: var(--fire-opal);
+<<<<<<< HEAD
     margin: 35px;
+=======
+    margin-top: 20px;
+    margin: 10px 30px;
+    margin-bottom: 10px;
+}
+
+#complete-activity {
+    background-color: var(--opal);
+    color: var(--black-coffee);
+    margin: 0px 50px;
+    font-size: 15px;
+>>>>>>> e3c54f8037c552c8299d1814e1d66a757b4cd7f8
 }
 
 #activityText1 {
     background-color: #EB5E55;
     color: #fdf0d5;
     display: none;
+<<<<<<< HEAD
     margin: 50px 10px 0px 10px;
+=======
+    feature/styling-fixes
+    margin-top: 20px;
+    padding: 10px;
+>>>>>>> e3c54f8037c552c8299d1814e1d66a757b4cd7f8
 }
 
+    margin: 10px 30px;
+}
 
 /* Help Modal */
 
@@ -137,6 +166,7 @@ footer {
 #close-modal:hover {
     padding: 15px;
     transition: 200ms;
+<<<<<<< HEAD
 }
 
 #modalStyle {
@@ -164,3 +194,6 @@ footer {
     transition: 200ms;
 }
 
+=======
+}
+>>>>>>> e3c54f8037c552c8299d1814e1d66a757b4cd7f8
