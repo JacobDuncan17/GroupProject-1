@@ -25,8 +25,14 @@ body {
 #todayCard {
     background-color: #3a3335;
     color: #fdf0d5;
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    min-height: fit-content;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
 }
 
@@ -39,13 +45,15 @@ body {
 #activityText {
     background-color: #EB5E55;
     color: #fdf0d5;
+    margin-top: 20px;
+    padding: 10px;
 }
 
 main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 nav {
@@ -92,22 +100,21 @@ footer {
     margin: 8px 20px;
 }
 
-<<<<<<< HEAD
 
 #generateActivityBtn {
     background-color: var(--fire-opal);
-    margin: 30px;
+    margin-top: 20px;
 }
 
 #activityText1 {
     background-color: #EB5E55;
     color: #fdf0d5;
     display: none;
-    margin-top: 50px;
+    margin-top: 20px;
+    padding: 10px;
 }
 
 
-=======
 /* Help Modal */
 
 .help-icon {
@@ -140,4 +147,3 @@ footer {
     padding: 15px;
     transition: 200ms;
 }
->>>>>>> f2425e2cd0115c70e18f299403c94340719877f6
