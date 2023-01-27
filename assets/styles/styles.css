@@ -104,16 +104,28 @@ footer {
 #generateActivityBtn {
     background-color: var(--fire-opal);
     margin-top: 20px;
+    margin: 10px 30px;
+    margin-bottom: 10px;
+}
+
+#complete-activity {
+    background-color: var(--opal);
+    color: var(--black-coffee);
+    margin: 0px 50px;
+    font-size: 15px;
 }
 
 #activityText1 {
     background-color: #EB5E55;
     color: #fdf0d5;
     display: none;
+    feature/styling-fixes
     margin-top: 20px;
     padding: 10px;
 }
 
+    margin: 10px 30px;
+}
 
 /* Help Modal */
 
