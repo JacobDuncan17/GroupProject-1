@@ -92,22 +92,20 @@ footer {
     margin: 8px 20px;
 }
 
-<<<<<<< HEAD
 
 #generateActivityBtn {
     background-color: var(--fire-opal);
-    margin: 30px;
+    margin: 35px;
 }
 
 #activityText1 {
     background-color: #EB5E55;
     color: #fdf0d5;
     display: none;
-    margin-top: 50px;
+    margin: 50px 10px 0px 10px;
 }
 
 
-=======
 /* Help Modal */
 
 .help-icon {
@@ -140,4 +138,29 @@ footer {
     padding: 15px;
     transition: 200ms;
 }
->>>>>>> f2425e2cd0115c70e18f299403c94340719877f6
+
+#modalStyle {
+    background-color: var(--papaya-whip)
+}
+
+#scoreModalHeader{
+    color: var(--black-coffee);
+}
+#score1 {
+    background-color: var(--fire-opal);
+    color: var(--papaya-whip);
+}
+
+#giveUp {
+    background-color: var(--opal);
+    color: var(--papaya-whip);
+}
+.modal-text-light {
+    color: #3a3335c7;
+}
+
+#close-modal:hover {
+    padding: 15px;
+    transition: 200ms;
+}
+
