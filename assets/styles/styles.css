@@ -189,6 +189,9 @@ footer {
     transition: 200ms;
 }
 
+.hide {
+    visibility: hidden;
+}
 
 
 
