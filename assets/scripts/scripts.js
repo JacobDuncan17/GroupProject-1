@@ -122,6 +122,10 @@ completeButton.click(function () {
     completeButton.hide();
 });
 
+
+
+
+
 $("#today").text(today.format("MMM Do, YYYY"))
 $("#todayDay").text(today.format("dddd"))
 $("#tomorrow").text(tomorrow.format("MMM Do, YYYY"))
