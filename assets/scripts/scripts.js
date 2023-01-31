@@ -107,21 +107,6 @@ scoreModalclose.onclick = ()=>{
     scoreModal.style.display = "none"
 }
 
-// completeButton.click(function () {
-//     activity.style.backgroundColor = "aquamarine";
-//     activity.style.color = "#3a3335";
-//     completeButton.hide();
-// });
-// completeButton = $("#complete-activity");
-// completeButton.hide();
-
-// Complete Activity
-completeButton.click(function () {
-    activity.style.backgroundColor = "aquamarine";
-    activity.style.color = "#3a3335";
-    completeButton.hide();
-});
-
 $("#today").text(today.format("MMM Do, YYYY"))
 $("#todayDay").text(today.format("dddd"))
 $("#tomorrow").text(tomorrow.format("MMM Do, YYYY"))

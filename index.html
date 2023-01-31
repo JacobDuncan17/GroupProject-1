@@ -30,9 +30,7 @@
 
     <main>
 
-        <div class="p-6 bg-white border rounded-lg shadow " id="todayCard">
-            <h2 class="mb-2 text-3xl font-bold tracking-tight text-center" id="tomorrowDay"></h2>
-            <h3 class="mb-2 text-2xl font-bold tracking-tight text-center rounded-lg" id="tomorrow"></h3>
+        <div class="p-6 bg-white border rounded-lg shadow " id="todayCard1">
             <h4 class="mb-2 text-2xl tracking-tight text-center">Activity</h4>
             <div class="inline-flex items-center text-center space-y-4 md:flex md:space-y-0 md:space-x-4">
                 <!--Score Modal button-->
@@ -41,26 +39,28 @@
                 </button>
             </div>
             <button type="button" class="inline-flex items-center text-center mb-2 text-white font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none dark:focus:ring-blue-800" id="generateActivityBtn">Generate Daily Activity</button>
-            <button type="button"
-                class="inline-flex items-center text-center mb-2 text-white font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none dark:focus:ring-blue-800"
-                id="complete-activity">Complete</button>
-            <div id="todayWeather"></div>
         </div>
 
-        <div class="p-6 bg-white border rounded-lg shadow " id="todayCard">
-            <h2 class="mb-2 text-3xl font-bold tracking-tight text-center" id="todayDay"></h2>
-            <h3 class="mb-2 text-2xl font-bold tracking-tight text-center rounded-lg" id="today"></h3>
+        <div class="p-6 bg-white border rounded-lg shadow " id="todayCard2">
             <h4 class="mb-2 text-2xl tracking-tight text-center">Activity</h4>
-            <p class="p-1 rounded-lg" id="activityText">Placeholder</p>
-            <div id="tomorrowWeather"></div>
+            <div class="inline-flex items-center text-center space-y-4 md:flex md:space-y-0 md:space-x-4">
+                <!--Score Modal button-->
+                <button data-modal-target="small-modal" data-modal-toggle="small-modal" class="inline-flex items-center text-center w-full md:w-auto text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center" type="button" id="activityText1">
+                Small modal
+                </button>
+            </div>
+            <button type="button" class="inline-flex items-center text-center mb-2 text-white font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none dark:focus:ring-blue-800" id="generateActivityBtn">Generate Daily Activity</button>
         </div>
 
-        <div class="p-6 bg-white border rounded-lg shadow " id="todayCard">
-            <h2 class="mb-2 text-3xl font-bold tracking-tight text-center" id="dayAfterTomorrowDay"></h2>
-            <h3 class="mb-2 text-2xl font-bold tracking-tight text-center rounded-lg" id="dayAfterTomorrow"></h3>
+        <div class="p-6 bg-white border rounded-lg shadow " id="todayCard3">
             <h4 class="mb-2 text-2xl tracking-tight text-center">Activity</h4>
-            <p class="p-1 rounded-lg" id="activityText">Placeholder</p>
-            <div id="dayAfterTomorrowWeather"></div>
+            <div class="inline-flex items-center text-center space-y-4 md:flex md:space-y-0 md:space-x-4">
+                <!--Score Modal button-->
+                <button data-modal-target="small-modal" data-modal-toggle="small-modal" class="inline-flex items-center text-center w-full md:w-auto text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center" type="button" id="activityText1">
+                Small modal
+                </button>
+            </div>
+            <button type="button" class="inline-flex items-center text-center mb-2 text-white font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none dark:focus:ring-blue-800" id="generateActivityBtn">Generate Daily Activity</button>
         </div>
 
     </main>
@@ -132,7 +132,11 @@
             </div>
         </div>
     </div>
-
+    
+    <!-- Toast message: if user does not have location settings on, prompt them to turn them on before continuing -->
+    <div id="toast" class="fixed hide bottom-0 left-00 m-4 p-4 bg-red-500 text-white rounded-lg">
+        <span>To retrieve weather services on this application, please enable location services in your browser.</span>
+    </div>
 
     <footer>
         <a id="help-button">Help</a>
@@ -151,7 +155,6 @@
     <!-- Javascript -->
     <script src="./assets/scripts/scripts.js"></script>
     <!-- Weather script -->
-    <script src="./assets/scripts/mock.js"></script>
     <script src="./assets/scripts/weather.js"></script>
 
 </body>
