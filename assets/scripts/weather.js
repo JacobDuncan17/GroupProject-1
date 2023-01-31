@@ -56,21 +56,11 @@ async function getWeatherData(lat, long) {
   var responses = []
 
   // ESTABLISH start time depending on the index
-  for (var i = 0; i < 3; i++) {
-    if (i == 0) {
-      start_time = today.toISOString()
-      end_time = today.endOf('day').toISOString()
-    } else if (i == 1) {
-      start_time = tomorrow.startOf('day').toISOString()
-      end_time = tomorrow.endOf('day').toISOString()
-    } else {
-      start_time = dayAfterTomorrow.startOf('day').toISOString()
-      end_time = dayAfterTomorrow.endOf('day').toISOString()
-    }
+  start_time = today.toISOString()
+  end_time = today.endOf('day').toISOString()
 
-    response = await fetchTimelines(lat, long, "1h", start_time, end_time)
-    responses.push(response)
-  }
+  response = await fetchTimelines(lat, long, "1h", start_time, end_time)
+  responses.push(response)
 
   return responses
 }
@@ -109,10 +99,6 @@ function updatePageWithWeatherData(parsed_weather_data) {
   Object.keys(parsed_weather_data).forEach(e => {
     if (e == 0) {
       jqueryId = "todayWeather"
-    } else if (e == 1) {
-      jqueryId = "tomorrowWeather"
-    } else {
-      jqueryId = "dayAfterTomorrowWeather"
     }
 
     $(`#${jqueryId}`).append(`
