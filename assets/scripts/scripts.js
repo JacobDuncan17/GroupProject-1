@@ -49,10 +49,32 @@ function bored() {
 }
 
 // Complete Activity
+var storeActivity = function (name) {
+    completedActivity = name.textContent
+    dayCompleted = today.format("MMM DD, YYYY");
+    var completedActivity = {
+        description: completedActivity,
+        day: dayCompleted
+    }
+    // Create a local storage object for completed activity
+    i = 1;
+    while (i < 365) {
+        if (!localStorage.getItem("Activity0")) {
+            localStorage.setItem("Activity0", JSON.stringify(completedActivity));
+            i = 365;
+        } else if (!localStorage.getItem("Activity" + i)) {
+            localStorage.setItem("Activity" + i, JSON.stringify(completedActivity));
+            i = 365;
+        }
+        i++;
+    }
+}
+
 completeButton.click(function () {
     activity.style.backgroundColor = "aquamarine";
     activity.style.color = "#3a3335";
     completeButton.hide();
+    storeActivity(activity);
 });
 
 $("#today").text(today.format("MMM Do, YYYY"))
