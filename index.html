@@ -30,26 +30,27 @@
 
     <main>
 
-        <div class="p-6 bg-white border rounded-lg shadow " id="todayCard">
+        <div class="p-6 bg-white border rounded-lg shadow" id="todayCard">
             <h2 class="mb-2 text-3xl font-bold tracking-tight text-center" id="tomorrowDay"></h2>
             <h3 class="mb-2 text-2xl font-bold tracking-tight text-center rounded-lg" id="tomorrow"></h3>
             <h4 class="mb-2 text-2xl tracking-tight text-center">Activity</h4>
             <div class="inline-flex items-center text-center space-y-4 md:flex md:space-y-0 md:space-x-4">
                 <!--Score Modal button-->
-                <button data-modal-target="small-modal" data-modal-toggle="small-modal" class="inline-flex items-center text-center w-full md:w-auto text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center" type="button" id="activityText1">
-                Small modal
+                <button data-modal-target="small-modal" data-modal-toggle="small-modal"
+                    class="inline-flex items-center text-center w-full md:w-auto text-white font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                    type="button" id="activityText1">
+                    Small modal
                 </button>
             </div>
-            <button type="button" class="inline-flex items-center text-center mb-2 text-white font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none dark:focus:ring-blue-800" id="generateActivityBtn">Generate Daily Activity</button>
+            <button type="button"
+                class="inline-flex items-center text-center mb-2 text-white font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none dark:focus:ring-blue-800"
+                id="generateActivityBtn">Generate Daily Activity</button>
             <button type="button"
                 class="inline-flex items-center text-center mb-2 text-white font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none dark:focus:ring-blue-800"
                 id="complete-activity">Complete</button>
-            <div id="todayWeather"></div>
         </div>
 
         <div class="p-6 bg-white border rounded-lg shadow " id="todayCard">
-            <h2 class="mb-2 text-3xl font-bold tracking-tight text-center" id="todayDay"></h2>
-            <h3 class="mb-2 text-2xl font-bold tracking-tight text-center rounded-lg" id="today"></h3>
             <h4 class="mb-2 text-2xl tracking-tight text-center">Activity</h4>
             <p class="p-1 rounded-lg" id="activityText">Placeholder</p>
             <div id="tomorrowWeather"></div>
@@ -65,8 +66,19 @@
 
     </main>
 
+    <div id="today-card" class="p-6 bg-white border rounded-lg shadow">
+        <div id="date">
+            <h2 class="mb-2 text-3xl font-bold tracking-tight text-center" id="todayDay"></h2>
+            <h3 class="mb-2 text-2xl font-bold tracking-tight text-center rounded-lg" id="today"></h3>
+        </div>
+        <div id="weather">
+            <div id="todayWeather"></div>
+        </div>
+    </div>
+
     <!--Score Modal-->
-    <div id="small-modal" class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full bg-gray-500 bg-opacity-75 transition-opacity">
+    <div id="small-modal"
+        class="fixed inset-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full bg-gray-500 bg-opacity-75 transition-opacity">
         <div class="relative w-full h-full max-w-md md:h-auto">
             <!-- Modal content -->
             <div class="relative bg-white rounded-lg shadow dark:bg-gray-700" id="modalStyle">
@@ -75,21 +87,31 @@
                     <h3 class="text-xl font-bold" id="scoreModalHeader">
                         Small modal
                     </h3>
-                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="small-modal" id="scoreModalClose">
-                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="small-modal" id="scoreModalClose">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
                         <span class="sr-only">Close modal</span>
                     </button>
                 </div>
                 <!-- Modal body -->
                 <!-- Modal footer -->
-                <div class="flex items-center justify-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                    <button data-modal-hide="small-modal" type="button" class="rounded-lg font-bold px-5 py-2.5 text-center" id="score1">Complete</button>
-                    <button data-modal-hide="small-modal" type="button" class="rounded-lg text-sm font-bold px-5 py-2.5" id="giveUp">Give up</button>
+                <div
+                    class="flex items-center justify-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="small-modal" type="button"
+                        class="rounded-lg font-bold px-5 py-2.5 text-center" id="score1">Complete</button>
+                    <button data-modal-hide="small-modal" type="button" class="rounded-lg text-sm font-bold px-5 py-2.5"
+                        id="giveUp">Give up</button>
                 </div>
             </div>
         </div>
     </div>
-  
+
 
     <!-- Help Modal -->
     <div id="help-modal" class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
@@ -132,7 +154,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Toast message: if user does not have location settings on, prompt them to turn them on before continuing -->
     <div id="toast" class="fixed hide bottom-0 left-00 m-4 p-4 bg-red-500 text-white rounded-lg">
         <span>To retrieve weather services on this application, please enable location services in your browser.</span>
