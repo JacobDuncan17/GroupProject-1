@@ -132,7 +132,11 @@
             </div>
         </div>
     </div>
-
+    
+    <!-- Toast message: if user does not have location settings on, prompt them to turn them on before continuing -->
+    <div id="toast" class="fixed hide bottom-0 left-00 m-4 p-4 bg-red-500 text-white rounded-lg">
+        <span>To retrieve weather services on this application, please enable location services in your browser.</span>
+    </div>
 
     <footer>
         <a id="help-button">Help</a>
@@ -151,7 +155,6 @@
     <!-- Javascript -->
     <script src="./assets/scripts/scripts.js"></script>
     <!-- Weather script -->
-    <script src="./assets/scripts/mock.js"></script>
     <script src="./assets/scripts/weather.js"></script>
 
 </body>
