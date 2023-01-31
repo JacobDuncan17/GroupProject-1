@@ -17,47 +17,52 @@ const today = dayjs()
 completeButton = $("#complete-activity");
 completeButton.hide();
 const generateActivity = document.querySelector("#generateActivityBtn");
-generateActivity.onclick = () => {
-    activity.style.display = "flex";
-    generateActivity.style.display = "none"
-    bored();
-}
+
 const boredApi = 'http://www.boredapi.com/api/activity/'
-const activity = document.querySelector("#activityText1");
-function bored() {
-    fetch(boredApi)
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            let boredApiData = data;
-            const dataString = JSON.stringify(boredApiData.activity);
-            activity.textContent = boredApiData.activity;
-            completeButton.show();
-        })
+const activity1 = document.querySelector("#activityText1");
+const activity2 = document.querySelector("#activityText2");
+const activity3 = document.querySelector("#activityText3");
+
+async function getData(activity) {
+const response = await fetch(boredApi);
+const data = await response.json();
+const dataString = JSON.stringify(data.activity);
+activity.textContent = data.activity;
+
+return data.activity;
 }
 
-// Complete Activity
-var storeActivity = function (name) {
-    completedActivity = name.textContent
-    dayCompleted = today.format("MMM DD, YYYY");
-    var completedActivity = {
-        description: completedActivity,
-        day: dayCompleted
-    }
-    // Create a local storage object for completed activity
-    i = 1;
-    while (i < 365) {
-        if (!localStorage.getItem("Activity0")) {
-            localStorage.setItem("Activity0", JSON.stringify(completedActivity));
-            i = 365;
-        } else if (!localStorage.getItem("Activity" + i)) {
-            localStorage.setItem("Activity" + i, JSON.stringify(completedActivity));
-            i = 365;
-        }
-        i++;
-    }
-}
+getData(activity1);
+getData(activity2);
+getData(activity3);
+const testBtn = document.querySelector("#testBtn");
+const testBtn2 = document.querySelector("#testBtn1");
+const testBtn3 = document.querySelector("#testBtn2");
+const todayCard1 = document.querySelector("#todayCard1");
+const todayCard2 = document.querySelector("#todayCard2");
+const todayCard3 = document.querySelector("#todayCard3");
+testBtn.addEventListener("click", test);
+function test(){
+    localStorage.setItem("Activity", activity1.textContent);
+    todayCard2.style.display = "none";
+    todayCard3.style.display = "none";
+    testBtn.style.display = "none";
+};
+testBtn2.addEventListener("click", test1);
+function test1(){
+    localStorage.setItem("Activity", activity2.textContent);
+    todayCard1.style.display = "none";
+    todayCard3.style.display = "none";
+    testBtn2.style.display = "none";
+};
+testBtn3.addEventListener("click", test2);
+function test2(){
+    localStorage.setItem("Activity", activity3.textContent);
+    todayCard1.style.display = "none";
+    todayCard2.style.display = "none";
+    testBtn3.style.display = "none";
+};
+
 
 completeButton.click(function () {
     activity.style.backgroundColor = "aquamarine";

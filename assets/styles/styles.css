@@ -70,7 +70,7 @@ body {
     align-items: center;
 }
 
-#activityText {
+#activityText1, #activityText2, #activityText3 {
     background-color: #EB5E55;
     color: #fdf0d5;
     margin-top: 20px;
@@ -144,14 +144,6 @@ footer {
     margin: 0px 50px;
     font-size: 15px;
 
-}
-
-#activityText1 {
-    background-color: #EB5E55;
-    color: #fdf0d5;
-    display: none;
-    margin-top: 20px;
-    padding: 10px;
 }
 
 #today-card {
@@ -241,4 +233,10 @@ footer {
 
 .hide {
     visibility: hidden;
+}
+#testBtn, #testBtn1, #testBtn2{
+    background-color: #EB5E55;
+    color: #fdf0d5;
+    margin-top: 200px;
+    padding: 10px;
 }
