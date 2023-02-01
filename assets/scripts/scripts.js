@@ -55,7 +55,8 @@ scoreModalbtn2.disabled = true;
 scoreModalbtn3.disabled = true;
 testBtn.addEventListener("click", test);
 function test(){
-    localStorage.setItem("Activity", activity1.textContent);
+    const localStore = JSON.stringify(activity1.textContent);
+    localStorage.setItem("Activity", localStore);
     todayCard2.style.display = "none";
     todayCard3.style.display = "none";
     testBtn.style.display = "none";
@@ -64,7 +65,8 @@ function test(){
 };
 testBtn2.addEventListener("click", test1);
 function test1(){
-    localStorage.setItem("Activity", activity2.textContent);
+    const localStore = JSON.stringify(activity2.textContent);
+    localStorage.setItem("Activity", localStore);
     todayCard1.style.display = "none";
     todayCard3.style.display = "none";
     testBtn2.style.display = "none";
@@ -73,7 +75,8 @@ function test1(){
 };
 testBtn3.addEventListener("click", test2);
 function test2(){
-    localStorage.setItem("Activity", activity3.textContent);
+    const localStore = JSON.stringify(activity3.textContent);
+    localStorage.setItem("Activity", localStore);
     todayCard1.style.display = "none";
     todayCard2.style.display = "none";
     testBtn3.style.display = "none";
