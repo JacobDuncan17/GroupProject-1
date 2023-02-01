@@ -1,0 +1,44 @@
+:root {
+    --black-coffee: #3a3335;
+    --fire-opal: #eb5e55;
+    --ruby: #d81e5b;
+    --papaya-whip: #fdf0d5;
+    --opal: #c6d8d3;
+}
+
+* {
+    font-family: "myriad-pro", sans-serif;
+    font-style: normal;
+}
+
+nav {
+    font-family: "myriad-pro", sans-serif;
+    font-style: normal;
+    font-size: 5rem;
+    padding: 2rem;
+    color: var(--papaya-whip);
+    background-color: var(--black-coffee);
+}
+
+body {
+    background-color: var(--papaya-whip);
+}
+
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 150px;
+}
+
+
+h2 {
+    font-size: 50px;
+    background-color: var(--black-coffee);
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: var(--papaya-whip);
+    display: flex;
+
+}
