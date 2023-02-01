@@ -27,7 +27,7 @@ completeButton = $("#complete-activity");
 completeButton.hide();
 const generateActivity = document.querySelector("#generateActivityBtn");
 
-const boredApi = 'http://www.boredapi.com/api/activity/'
+const boredApi = 'https://www.boredapi.com/api/activity/'
 const activity1 = document.querySelector("#activityText1");
 const activity2 = document.querySelector("#activityText2");
 const activity3 = document.querySelector("#activityText3");
