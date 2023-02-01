@@ -18,15 +18,28 @@
 <body>
 
     <nav>
-        <div id="navigation">
+        <div>
             <h1>2DAY</h1>
-            <a href="./">Logged Activities</a>
         </div>
-        <div id="score">
-            <h2>Score: <span id="scorePoints">0</span></h2>
+        <div id="links">
+            <a class="py-4 px-2 border-b-4 font-semibold">Score:  <span id="scorePoints">0</span></a>
+            <a class="py-4 px-2 border-b-4 font-semibold">Logged Activities</a>
+            <a class="py-4 px-2 border-b-4 font-semibold" id="help-button">Help</a>
         </div>
     </nav>
 
+    <div class="flex justify-center">
+        <div id="today-card" class="p-6 bg-white border rounded-lg shadow">
+            <div id="date">
+                <h2 class="mb-2 text-3xl font-bold tracking-tight text-center" id="todayDay"></h2>
+                <h3 class="mb-2 text-2xl font-bold tracking-tight text-center rounded-lg" id="today"></h3>
+            </div>
+            <div id="weather">
+                <div id="todayWeather"></div>
+            </div>
+        </div>
+    </div>
+    
     <main>
 
         <div class="p-6 bg-white border rounded-lg shadow " id="todayCard1">
@@ -72,16 +85,6 @@
         </div>
 
     </main>
-
-    <div id="today-card" class="p-6 bg-white border rounded-lg shadow">
-        <div id="date">
-            <h2 class="mb-2 text-3xl font-bold tracking-tight text-center" id="todayDay"></h2>
-            <h3 class="mb-2 text-2xl font-bold tracking-tight text-center rounded-lg" id="today"></h3>
-        </div>
-        <div id="weather">
-            <div id="todayWeather"></div>
-        </div>
-    </div>
 
     <!--Score Modal-->
     <div id="small-modal"
@@ -166,10 +169,6 @@
     <div id="toast" class="fixed hide bottom-0 left-00 m-4 p-4 bg-red-500 text-white rounded-lg">
         <span>To retrieve weather services on this application, please enable location services in your browser.</span>
     </div>
-
-    <footer>
-        <a id="help-button">Help</a>
-    </footer>
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
