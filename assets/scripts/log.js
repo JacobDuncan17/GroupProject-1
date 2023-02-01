@@ -1,12 +1,11 @@
 var activities = $("#cards");
-
+var h2 = $("#header")
 var logActivities = function() {
     for (let i = 0; i < 365; i++) {
-        if (localStorage.getItem("activity" + i)) {
-            var activity = JSON.parse(localStorage.getItem("activity" + i))
-            var activityCard = document.createElement("h2")
-            activityCard.textContent = activity.description
-            activities.appendChild(activity)
+        if (localStorage.getItem("Activity")) {
+            var activity = JSON.parse(localStorage.getItem("Activity"))
+            console.log(activity)
+            h2.text(activity)
         } else {
             return
         }
