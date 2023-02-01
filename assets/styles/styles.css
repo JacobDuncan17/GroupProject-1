@@ -22,7 +22,35 @@ body {
     background-color: var(--papaya-whip);
 }
 
-#todayCard {
+#todayCard1 {
+    background-color: #3a3335;
+    color: #fdf0d5;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    min-height: fit-content;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#todayCard2 {
+    background-color: #3a3335;
+    color: #fdf0d5;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    min-height: fit-content;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#todayCard3 {
     background-color: #3a3335;
     color: #fdf0d5;
     width: 300px;
@@ -53,7 +81,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 nav {
@@ -100,8 +128,6 @@ footer {
     margin: 8px 20px;
 }
 
-
-
 #generateActivityBtn {
     background-color: var(--fire-opal);
 
@@ -128,7 +154,29 @@ footer {
     padding: 10px;
 }
 
+#today-card {
+    background-color: var(--black-coffee);
+    color: var(--papaya-whip);
+    min-width: 500px;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    border: var(--black-coffee) 0.5px solid;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
 
+#weather {
+    font-weight: bold;
+}
 
 /* Help Modal */
 
@@ -168,9 +216,10 @@ footer {
     background-color: var(--papaya-whip)
 }
 
-#scoreModalHeader{
+#scoreModalHeader {
     color: var(--black-coffee);
 }
+
 #score1 {
     background-color: var(--fire-opal);
     color: var(--papaya-whip);
@@ -180,6 +229,7 @@ footer {
     background-color: var(--opal);
     color: var(--papaya-whip);
 }
+
 .modal-text-light {
     color: #3a3335c7;
 }
@@ -192,6 +242,3 @@ footer {
 .hide {
     visibility: hidden;
 }
-
-
-

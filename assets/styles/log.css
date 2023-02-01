@@ -20,43 +20,10 @@ nav {
     background-color: var(--black-coffee);
 }
 
-a {
-    display: flex;
-    align-content: center;
-}
-
-h1 {
-    display: flex;
-    align-content: center;
-}
-
 body {
     background-color: var(--papaya-whip);
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
-}
-
-
-#card {
-    background-color: var(--black-coffee);
-    color: var(--papaya-whip);
-    box-shadow: 0 0 30px var(--opal);
-    transition: all .2s ease-in-out;
-}
-
-#card:hover {
-    transform: scale(1.6);
-    box-shadow: 0 0 30px var(--fire-opal);
-}
-
-#activityText {
-    background-color: #EB5E55;
-    color: #fdf0d5;
-}
 
 main {
     display: flex;
@@ -65,7 +32,13 @@ main {
     margin-top: 150px;
 }
 
-#date1 {
-    background-color: var(--opal);
-    color: var(--black-coffee)
+
+h2 {
+    font-size: 50px;
+    background-color: var(--black-coffee);
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: var(--papaya-whip);
+    display: flex;
+
 }
